@@ -1,0 +1,18 @@
+server:
+  port: 10010
+spring:
+  application:
+    name: user-service
+  datasource:
+    url: jdbc:mysql://[数据库url]/code
+    username: [数据库账号]
+    password: [数据库密码]
+    driver-class-name: com.mysql.jdbc.Driver
+mybatis:
+  type-aliases-package: cn.x.user.entity
+  configuration:
+    map-underscore-to-camel-case: true
+logging:
+  level:
+    cn.x: debug
+

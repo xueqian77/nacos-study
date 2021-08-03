@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: [nacos安装服务器的ip]:[nacos的端口]
+      config:
+        server-addr: [nacos安装服务器的ip]:[nacos的端口]
+        file-extension: yaml
+        enabled: false #上传到git所以关闭
+  application:
+    name: gateway-service
